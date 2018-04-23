@@ -20,7 +20,7 @@ class App extends Component {
         hours: 0,
         minutes: 0,
         seconds: 0,
-        targetDate: '4-13-2019',
+        targetDate: '04/13/2019',
         targetHours: '06',
         targetMinutes: '37'
     },
@@ -59,14 +59,14 @@ class App extends Component {
       }
     )
   }
-  
+
   render() {
     const detailsDayId = this.state.detailsDayId;
     return (
       <div className="App">
         <h1>Trip Tool</h1>
         <div>
-          <h3>{this.state.countdown.targetDate}&nbsp;/&nbsp;{this.state.countdown.targetHours}:{this.state.countdown.targetMinutes}</h3>
+          <h3>{this.state.countdown.targetDate}&nbsp;-&nbsp;{this.state.countdown.targetHours}:{this.state.countdown.targetMinutes}</h3>
           <Countdown
             days={this.state.countdown.days}
             hours={this.state.countdown.hours}
