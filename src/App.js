@@ -36,7 +36,7 @@ class App extends Component {
     const time = new Date(this.state.countdown.targetDate);
     time.setHours(this.state.countdown.targetHours);
     time.setMinutes(this.state.countdown.targetMinutes);
-    var now = new Date().getTime();
+    var now = new Date();
     var dist = time - now;
     if(dist < 1 ){
       clearInterval(this.state.intervalId)
@@ -59,33 +59,7 @@ class App extends Component {
       }
     )
   }
-
-  switchNameHandler = (newMain) => {
-    this.setState(
-      {
-        days: [
-          {date: 'April 13', main: 'Arriving'},
-          {date: 'April 14', main: newMain},
-          {date: 'April 15', main: 'Disney 2'},
-          {date: 'April 16', main: 'California Adventure'}
-        ]
-      }
-    )
-  }
-
-  mainChangeHandler = (event) => {
-    this.setState(
-      {
-        days: [
-          {date: 'April 13', main: 'Arriving'},
-          {date: 'April 14', main: event.target.value},
-          {date: 'April 15', main: 'Disney 2'},
-          {date: 'April 16', main: 'California Adventure'}
-        ]
-      }
-    )
-  }
-
+  
   render() {
     const detailsDayId = this.state.detailsDayId;
     return (

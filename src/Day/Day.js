@@ -5,11 +5,6 @@ import Activity from '../Activity/Activity';
 import './Day.css'
 
 const day = (props) => {
-  const style = {
-    '@media (min-width: 500px)':{
-        width: '450px'
-    }
-  };
   return <div className="Day">
           <div>
             <h2>{props.date}&nbsp;-&nbsp;{props.main}</h2>

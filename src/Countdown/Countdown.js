@@ -11,9 +11,9 @@ const countdown = (props) => {
   // };
   return <div className="divCountDown">
     <div className="box_time"><p>{props.days + ''}</p> dias</div>
-    <div className="box_time"><p>{props.hours + ''}</p> horas</div>
-    <div className="box_time"><p>{props.minutes + ''}</p> minutos</div>
-    <div className="box_time"><p>{props.seconds + ''}</p> </div>
+    <div className="box_time"><p>{props.hours + ''}</p> hrs</div>
+    <div className="box_time"><p>{props.minutes + ''}</p> min</div>
+    <div className="box_time"><p>{props.seconds + ''}</p> sec</div>
   </div>
 };
 

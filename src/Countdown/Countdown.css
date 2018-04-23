@@ -1,21 +1,29 @@
 .divCountDown {
 		margin: 50px auto;
-		width: 30%;
+		width: 20%;
 		padding: 20px;
-    border: 2px solid #DF612B;
+    border: 3px solid #DF612B;
     box-shadow: 0 4px 6px #ccc;
 		position: relative;
 		text-align: center;
 	}
 
 	.box_time {
-			margin: auto;
-		    border-radius: 25px;
-		    border: 1px solid #ab9ff2;
-		    padding: 20px;
-		    width: 50px;
-		    height: 50px;
-		    text-align: center;
-		    vertical-align: middle;
-		    display: inline-block;
+			margin: 10px;
+	    border-radius: 15px;
+	    border: 2px solid #ab9ff2;
+	    padding: 15px;
+	    width: 40px;
+	    height: 40px;
+	    text-align: center;
+			font-size: 11px;
+			font-weight: bold;
+	    vertical-align: middle;
+	    display: inline-block;
+		}
+
+		@media (min-width: 250px) {
+		    .Day {
+		      width: 450px;
+		    }
 		}
