@@ -1,0 +1,23 @@
+.Activity {
+  font-size: 12px;
+}
+
+.Activity:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.Column {
+  float: left;
+  width: 50%
+}
+
+.Time {
+  text-align: right;
+  font-weight: bold;
+}
+
+.ActivityText{
+  text-align: left;
+}
