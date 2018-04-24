@@ -3,12 +3,7 @@ import Radium from 'radium';
 
 import './Countdown.css'
 
-const countdown = (props) => {
-  // const style = {
-  //   '@media (min-width: 500px)':{
-  //       width: '450px'
-  //   }
-  // };
+const countdown = (props) => {  
   return <div className="divCountDown">
     <div className="box_time"><p>{props.days + ''}</p> dias</div>
     <div className="box_time"><p>{props.hours + ''}</p> hrs</div>
