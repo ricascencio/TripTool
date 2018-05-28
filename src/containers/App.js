@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
 import Radium from 'radium';
+import logo from '../assets/plane.svg';
 import './App.css';
-import Day from './Day/Day';
-import Countdown from './Countdown/Countdown';
+import Days from '../components/Day/Days';
+import Countdown from '../components/Countdown/Countdown';
 
 class App extends Component {
   state = {
     days: [
-       { id: '1', date: 'April 13', main: 'Llegada', activities: [ {id: '1', time: '10:00 - 10:30', name: 'Desayuno'}, {id: '2', time: '11:30 - 13:30', name: 'Ross'}, {id: '3', time: '14:00 - 15:00', name: 'Check in'}]},
+       { id: '1', date: 'April 13', main: 'Llegada', activities: [ {id: '1', time: '10:00 - 10:30', name: 'Desayuno', timeWeather: '09:00:00'}, {id: '2', time: '11:30 - 13:30', name: 'Ross', timeWeather: '12:00:00'}, {id: '3', time: '14:00 - 15:00', name: 'Check in', timeWeather: '15:00:00'}]},
        { id: '2', date: 'April 14', main: 'Disneyland - dia 1', activities: [ {id: '1', time: '08:00 - 24:00', name: 'Disneyland'}]},
        { id: '3', date: 'April 15', main: 'Disneyland - dia 2', activities: [ {id: '1', time: '08:00 - 22:00', name: 'Disneyland'}]},
-       { id: '4', date: 'April 16', main: 'Shopping', activities: [ {id: '1', time: '08:00 - 09:00', name: 'Desayuno'}, {id: '2', time: '10:00 - 18:00', name: 'Shopping'}, {id: '3', time: '19:00 - 20:00', name: 'Cena'}]},
+       { id: '4', date: 'April 16', main: 'Shopping', activities: [ {id: '1', time: '08:00 - 09:00', name: 'Desayuno', timeWeather: '09:00:00'}, {id: '2', time: '10:00 - 18:00', name: 'Shopping', timeWeather: '12:00:00'}, {id: '3', time: '19:00 - 20:00', name: 'Cena', timeWeather: '18:00:00'}]},
        { id: '5', date: 'April 17', main: 'California Adventure', activities: [ {id: '1', time: '08:00 - 22:00', name: 'California Adventure'}]},
-       { id: '6', date: 'April 18', main: 'Hollywood', activities: [ {id: '1', time: '08:00 - 09:00', name: 'Desayuno'}, {id: '2', time: '10:00 - 13:00', name: 'Hollywood area'}, {id: '3', time: '14:00 - 15:00', name: 'Comida'}, {id: '4', time: '16:00 - 17:00', name: 'Santa Monica'}]},
-       { id: '7', date: 'April 19', main: 'Universal Studios', activities: [ {id: '1', time: '08:00 - 09:00', name: 'Desayuno'}, {id: '2', time: '10:00 - 19:00', name: 'Universal Studios'}, {id: '3', time: '19:00 - 20:00', name: 'Cenar'}]}
+       { id: '6', date: 'April 18', main: 'Hollywood', activities: [ {id: '1', time: '08:00 - 09:00', name: 'Desayuno', timeWeather: '09:00:00'}, {id: '2', time: '10:00 - 13:00', name: 'Hollywood area', timeWeather: '12:00:00'}, {id: '3', time: '14:00 - 15:00', name: 'Comida', timeWeather: '15:00:00'}, {id: '4', time: '16:00 - 17:00', name: 'Santa Monica', timeWeather: '15:00:00'}]},
+       { id: '7', date: 'April 19', main: 'Universal Studios', activities: [ {id: '1', time: '08:00 - 09:00', name: 'Desayuno', timeWeather: '09:00:00'}, {id: '2', time: '10:00 - 19:00', name: 'Universal Studios', timeWeather: '15:00:00'}, {id: '3', time: '19:00 - 20:00', name: 'Cenar', timeWeather: '18:00:00'}]}
     ],
     countdown: {
         days: 0,
@@ -64,7 +65,7 @@ class App extends Component {
     const detailsDayId = this.state.detailsDayId;
     return (
       <div className="App">
-        <h1>Trip Tool</h1>
+        <h1 className="App-title"><img src={logo} className="App-logo" alt="logo" /> Trip Tool</h1>
         <div>
           <h3>{this.state.countdown.targetDate}&nbsp;-&nbsp;{this.state.countdown.targetHours}:{this.state.countdown.targetMinutes}</h3>
           <Countdown
@@ -74,21 +75,9 @@ class App extends Component {
             seconds={this.state.countdown.seconds}/>
         </div>
         <div>
-
+          <Days
+            days={this.state.days}/>
         </div>
-        <div>
-          {
-            this.state.days.map((day, index) => {
-              return <Day
-                date={day.date}
-                main={day.main}
-                key={day.id}
-                activities={day.activities}/>
-            })
-          }
-        </div>
-
-
       </div>
     );
   }
