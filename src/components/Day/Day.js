@@ -28,7 +28,7 @@ class Day extends Component {
   //
   // getForecast = async () => {
   //
-  // }
+   //}
 
 
 
