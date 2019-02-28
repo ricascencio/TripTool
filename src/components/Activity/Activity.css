@@ -2,6 +2,10 @@
   font-size: 12px;
 }
 
+.TodayActivity{
+  background-color: #33b50c
+}
+
 .Activity:after{
     content: "";
     display: table;

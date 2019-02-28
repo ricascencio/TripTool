@@ -8,6 +8,16 @@
 		text-align: center;
 	}
 
+	.divCountDownFinish {
+		margin: 50px auto;
+		width: 320px;
+		padding: 15px;
+    border: 3px solid #33b50c;
+    box-shadow: 0 4px 6px #ccc;
+		position: relative;
+		text-align: center;
+	}
+
 	.box_time {
 			margin: 5px;
 	    border-radius: 15px;
@@ -17,7 +27,16 @@
 	    height: 40px;
 	    text-align: center;
 			font-size: 11px;
-			font-weight: bold;
+			font-weight: bold;			
+	    vertical-align: middle;
+	    display: inline-block;
+		}
+
+		.joy_text {
+			color: #1c8acb;
+			font-size: 30px;
+			font-weight: bold;			
+			margin: 20px;
 	    vertical-align: middle;
 	    display: inline-block;
 		}
