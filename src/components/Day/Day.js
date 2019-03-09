@@ -38,7 +38,7 @@ class Day extends Component {
       <div className={this.props.style}>
               <div>
                 <div>
-                <h2>April {this.props.date}&nbsp;-&nbsp;{this.props.main}</h2>                
+                <h2>{this.props.date}&nbsp;-&nbsp;{this.props.main}</h2>                
                 </div>
               </div>
               <details>
