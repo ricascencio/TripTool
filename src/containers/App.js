@@ -8,13 +8,14 @@ import Countdown from '../components/Countdown/Countdown';
 class App extends Component {
   state = {
     days: [
-       { id: '1', date: '13', main: 'Llegada', activities: [ {id: '1', time: '10:00 - 10:30', name: 'Desayuno', timeWeather: '09:00:00'}, {id: '2', time: '11:30 - 13:30', name: 'Ross', timeWeather: '12:00:00'}, {id: '3', time: '14:00 - 15:00', name: 'Check in', timeWeather: '15:00:00'}]},
-       { id: '2', date: '14', main: 'Disneyland - dia 1', activities: [ {id: '1', time: '08:00 - 24:00', name: 'Disneyland'}]},
-       { id: '3', date: '15', main: 'Shopping', activities: [ {id: '1', time: '08:00 - 09:00', name: 'Desayuno', timeWeather: '09:00:00'}, {id: '2', time: '10:00 - 18:00', name: 'Shopping', timeWeather: '12:00:00'}, {id: '3', time: '19:00 - 20:00', name: 'Cena', timeWeather: '18:00:00'}]},
-       { id: '4', date: '16', main: 'Disneyland - dia 2', activities: [ {id: '1', time: '08:00 - 22:00', name: 'Disneyland'}]},       
-       { id: '5', date: '17', main: 'California Adventure', activities: [ {id: '1', time: '08:00 - 22:00', name: 'California Adventure'}]},
-       { id: '6', date: '18', main: 'Hollywood', activities: [ {id: '1', time: '08:00 - 09:00', name: 'Desayuno', timeWeather: '09:00:00'}, {id: '2', time: '10:00 - 13:00', name: 'Hollywood area', timeWeather: '12:00:00'}, {id: '3', time: '14:00 - 15:00', name: 'Comida', timeWeather: '15:00:00'}, {id: '4', time: '16:00 - 17:00', name: 'Santa Monica', timeWeather: '15:00:00'}]},
-       { id: '7', date: '19', main: 'Universal Studios', activities: [ {id: '1', time: '08:00 - 09:00', name: 'Desayuno', timeWeather: '09:00:00'}, {id: '2', time: '10:00 - 19:00', name: 'Universal Studios', timeWeather: '15:00:00'}, {id: '3', time: '19:00 - 20:00', name: 'Cenar', timeWeather: '18:00:00'}]}
+       { id: '1', date: 'Saturday 13', main: 'Llegada', activities: [ {id: '1', time: '10:00 - 11:30', name: 'Desayuno'}, {id: '2', time: '11:30 - 13:30', name: 'Ross'}, {id: '3', time: '14:00 - 15:00', name: 'Check in'}]},
+       { id: '2', date: 'Sunday 14', main: 'Disneyland - dia 1', activities: [ {id: '1', time: '08:00 - 24:00', name: 'Disneyland'}]},
+       { id: '3', date: 'Monday 15', main: 'Shopping', activities: [ {id: '1', time: '08:00 - 09:00', name: 'Desayuno'}, {id: '2', time: '10:00 - 18:00', name: 'Shopping'}, {id: '3', time: '19:00 - 20:00', name: 'Cena'}]},
+       { id: '4', date: 'Tuesday 16', main: 'Disneyland - dia 2', activities: [ {id: '1', time: '07:00 - 22:00', name: 'Disneyland'}]},       
+       { id: '5', date: 'Wednesday 17', main: 'California Adventure', activities: [ {id: '1', time: '08:00 - 22:00', name: 'California Adventure'}]},
+       { id: '6', date: 'Thursday 18', main: 'Hollywood', activities: [ {id: '1', time: '08:00 - 20:00', name: 'PENDIENTE',}]},
+       { id: '7', date: 'Friday 19', main: 'Universal Studios', activities: [ {id: '1', time: '08:00 - 09:00', name: 'Desayuno'}, {id: '2', time: '10:00 - 19:00', name: 'Universal Studios'}, {id: '3', time: '19:00 - 20:00', name: 'Cenar'}]},
+       { id: '8', date: 'Saturday 20', main: 'Regreso', activities: [ {id: '1', time: '15:00', name: 'Vuelo'}]}
     ],
     countdown: {
         days: 0,
