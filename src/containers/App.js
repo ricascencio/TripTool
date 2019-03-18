@@ -11,9 +11,9 @@ class App extends Component {
        { id: '1', date: 'Saturday 13', main: 'Llegada', activities: [ {id: '1', time: '10:00 - 11:30', name: 'Desayuno'}, {id: '2', time: '11:30 - 13:30', name: 'Ross'}, {id: '3', time: '14:00 - 15:00', name: 'Check in'}]},
        { id: '2', date: 'Sunday 14', main: 'Disneyland - dia 1', activities: [ {id: '1', time: '08:00 - 24:00', name: 'Disneyland'}]},
        { id: '3', date: 'Monday 15', main: 'Shopping', activities: [ {id: '1', time: '08:00 - 09:00', name: 'Desayuno'}, {id: '2', time: '10:00 - 18:00', name: 'Shopping'}, {id: '3', time: '19:00 - 20:00', name: 'Cena'}]},
-       { id: '4', date: 'Tuesday 16', main: 'Disneyland - dia 2', activities: [ {id: '1', time: '07:00 - 22:00', name: 'Disneyland'}]},       
-       { id: '5', date: 'Wednesday 17', main: 'California Adventure', activities: [ {id: '1', time: '08:00 - 22:00', name: 'California Adventure'}]},
-       { id: '6', date: 'Thursday 18', main: 'Hollywood', activities: [ {id: '1', time: '08:00 - 20:00', name: 'PENDIENTE',}]},
+       { id: '4', date: 'Tuesday 16',  main: 'California Adventure', activities: [ {id: '1', time: '08:00 - 22:00', name: 'California Adventure'}]},
+       { id: '5', date: 'Wednesday 17', main: 'Disneyland - dia 2', activities: [ {id: '1', time: '07:00 - 22:00', name: 'Disneyland'}]},
+       { id: '6', date: 'Thursday 18', main: 'PROPUESTA', activities: [ {id: '1', time: '08:00 - 10:00', name: 'Desayuno-Check out'}, {id: '2', time: '10:00 - 11:30', name: 'Camino a Sana Monica Pier'},{id: '3', time: '11:30 - 14:00', name: 'Santa Monica Pier'}, {id: '4', time: '14:00 - 16:00', name: 'Comida'}, {id: '5', time: '16:00 - 20:00', name: 'to Beverly Hills/Hollywood'}]},
        { id: '7', date: 'Friday 19', main: 'Universal Studios', activities: [ {id: '1', time: '08:00 - 09:00', name: 'Desayuno'}, {id: '2', time: '10:00 - 19:00', name: 'Universal Studios'}, {id: '3', time: '19:00 - 20:00', name: 'Cenar'}]},
        { id: '8', date: 'Saturday 20', main: 'Regreso', activities: [ {id: '1', time: '16:04', name: 'Vuelo'}]}
     ],
